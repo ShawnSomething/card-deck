@@ -1,5 +1,5 @@
 export const Title = () => {
     return (
-        <h1>Choose a Deck to Begin</h1>
+        <h1 className="Header">Choose a Deck to Begin</h1>
     )
 }
