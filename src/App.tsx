@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Title } from './title';
+import { Hero } from './hero';
 import { Writing } from './writing';
 import { Coding } from './coding';
 import { Animating } from './animating';
@@ -9,14 +9,28 @@ import { NavBar } from './nav';
 
 function App() {
   return (
-      <header className="App-header">
-      <NavBar></NavBar>
-      <Title></Title>
-      <Writing></Writing>
-      <Coding></Coding>
-      <Animating></Animating>
-      <About></About>
-      </header>
+      <>
+        <main className="App-main">
+          <header>
+            <NavBar></NavBar>
+          </header>
+          <body> 
+            <Hero></Hero>
+          </body>
+          <body className="Card-decks">
+            <ul>
+              <li><Writing></Writing></li>
+              <li><Coding></Coding></li>
+              <li><Animating></Animating></li>
+            </ul>
+          </body>
+          <footer>
+            <About></About> 
+          </footer>
+        </main>
+      </>
+
+
   );
 }
 
