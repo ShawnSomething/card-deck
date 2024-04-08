@@ -29,7 +29,8 @@ export const Writing: React.FC = () => {
 
     return (
         <div className="relative">
-            {isHovered && <div className="Overlay" />}
+            <div className="Overlay" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
+            <div className="Glow" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
             <div className="Deck-box">
                 <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
                     <div className="Box-face" id="front">Shawn Wrote Something</div>
