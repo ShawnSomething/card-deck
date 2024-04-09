@@ -28,6 +28,7 @@ export const Writing: React.FC = () => {
     };
 
     return (
+        <>
         <div className="relative">
             <div className="Overlay" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
             <div className="Glow" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
@@ -42,5 +43,9 @@ export const Writing: React.FC = () => {
                 </div>
             </div>
         </div>
+        <div className='speech-bubble'>
+            <p>Stuff that Shawn Wrote</p>
+        </div>
+        </>
     );
 };

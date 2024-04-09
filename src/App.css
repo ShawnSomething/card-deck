@@ -54,7 +54,7 @@
 }
 
 .Deck-box {
-  height: 60vh;
+  height: 45vh;
   width: 30vw;
   position: relative;
   margin: 0 auto;
@@ -227,4 +227,27 @@
   100% {
       box-shadow: 0 0 150px 120px rgba(255, 255, 0, 0.5);
   }
+}
+
+.speech-bubble {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 15px;
+  left: 20%;
+  border-radius: 20px;
+  width: 200px;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Speech bubble pointer */
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: 100%; 
+  left: 25%;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent rgba(255, 255, 255, 0.5) transparent;
+  transform: translateX(-50%);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 }
