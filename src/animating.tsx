@@ -34,19 +34,19 @@ export const Animating: React.FC = () => {
                 <div className="Glow" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
                 <div className="Deck-box">
                     <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-                    <div className="Box-face" id="front">
+                    <div className="Box-face" id="front" style={{backgroundImage: 'linear-gradient(to bottom right, #614385, #516395)'}}>
                             <div className="text-container">Shawn Animated Something</div>
                             </div>
-                        <div className="Box-face" id="back">Back</div>
-                        <div className="Box-face" id="left"></div>
-                        <div className="Box-face" id="right"></div>
-                        <div className="Box-face" id="top">-------------------</div>
-                        <div className="Box-face" id="bottom"></div>
+                        <div className="Box-face" id="back" style={{backgroundImage: 'linear-gradient(to bottom right, #614385, #516395)'}}>Back</div>
+                        <div className="Box-face" id="left" style={{backgroundImage: 'linear-gradient(to bottom right, #614385, #516395)'}}></div>
+                        <div className="Box-face" id="right" style={{backgroundImage: 'linear-gradient(to bottom right, #614385, #516395)'}}></div>
+                        <div className="Box-face" id="top" style={{backgroundImage: 'linear-gradient(to bottom right, #614385, #516395)'}}>-------------------</div>
+                        <div className="Box-face" id="bottom" style={{backgroundImage: 'linear-gradient(to bottom right, #614385, #516395)'}}></div>
                     </div>
                 </div>
             </div>
             <div className={`speech-bubble ${isHovered ? 'show' : ''}`}>
-                <p>Stuff that Shawn Animated</p>
+                <p>Stuff that Shawn Animated. The best medium for art and storytelling. The ability to turn a blank page into a moving, living, breathing piece. Have a watch, have a chuckle, experience the fever-dreams that become reality.</p>
             </div>
         </>
     );

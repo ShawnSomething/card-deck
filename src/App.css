@@ -9,9 +9,10 @@
 .Nav-bar {
   display: flex;
   justify-content: space-between;
-  min-height: 10vh;
+  min-height: 5vh;
   padding: 0 5%;
   color: rgb(226, 224, 224);
+  background-color: #338464;
 }
 
 .Nav-bar .home {
@@ -35,6 +36,7 @@
 
 .Header {
   text-align: center;
+  padding-top: 15px;
   margin: 1vh;
 }
 
@@ -86,7 +88,6 @@
 
 .Box-face {
   color: white;
-  background: black;
   border: 2px solid white;
   font-size: 32px;
   box-sizing: border-box;
@@ -190,6 +191,7 @@
   margin-right: 30px;
   color: rgb(210, 206, 206);
   padding: 5px;
+  background: rgb(30, 48, 43);
 }
 
 .About-content {
@@ -211,6 +213,7 @@
   text-align: center;
   color: rgb(197, 197, 197);
   padding: 10px;
+  background: rgb(45, 73, 65);
 }
 
 .Overlay {
@@ -265,9 +268,11 @@
   position: relative;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
-  left: 20%;
+  left: -1%;
   border-radius: 20px;
-  width: 200px;
+  justify-content: space-around;
+  width: auto;
+  display: inline-block;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
   opacity: 0;
     transition: opacity 0.5s ease-in-out;

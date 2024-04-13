@@ -35,19 +35,19 @@ export const Writing: React.FC = () => {
                 <div className="Glow" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
                 <div className="Deck-box">
                     <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-                    <div className="Box-face" id="front">
+                    <div className="Box-face" id="front" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>
                         <div className="text-container">Shawn Wrote Something</div>
                         </div>
-                    <div className="Box-face" id="back">Back</div>
-                    <div className="Box-face" id="left"></div>
-                    <div className="Box-face" id="right"></div>
-                    <div className="Box-face" id="top">-------------------</div>
-                    <div className="Box-face" id="bottom"></div>
+                    <div className="Box-face" id="back" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>Back</div>
+                    <div className="Box-face" id="left" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
+                    <div className="Box-face" id="right" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
+                    <div className="Box-face" id="top" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>-------------------</div>
+                    <div className="Box-face" id="bottom" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
                     </div>
                 </div>
             </div>
             <div className={`speech-bubble ${isHovered ? 'show' : ''}`}>
-                <p>Stuff that Shawn Wrote</p>
+                <p>Stuff that Shawn Wrote. From learnings to musings, a lot goes through his mind at any given time. Some make it into words, few make it online, many lost. Hope you enjoy these articles and keen to have a discussion on them.</p>
             </div>
         </>
     );
