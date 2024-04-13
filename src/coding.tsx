@@ -34,11 +34,13 @@ export const Coding: React.FC = () => {
                 <div className="Glow" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
                 <div className="Deck-box">
                     <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-                        <div className="Box-face" id="front">Shawn Coded Something</div>
+                        <div className="Box-face" id="front">
+                            <div className="text-container">Shawn Coded Something</div>
+                            </div>
                         <div className="Box-face" id="back">Back</div>
                         <div className="Box-face" id="left"></div>
                         <div className="Box-face" id="right"></div>
-                        <div className="Box-face" id="top"></div>
+                        <div className="Box-face" id="top">-------------------</div>
                         <div className="Box-face" id="bottom"></div>
                     </div>
                 </div>
