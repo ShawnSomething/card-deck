@@ -97,7 +97,7 @@
   height: 300px;
   width: 250px;
   text-align: center;
-  padding: 100px 0px;
+  padding: 20px 0px;
   transform: translateZ(50px);
   font-size: 25px;
 }
@@ -107,7 +107,7 @@
   position: relative;
   bottom: 0;
   left: 0;
-  transform: translateY(180%);
+  transform: translateY(10%);
 }
 
 #back {

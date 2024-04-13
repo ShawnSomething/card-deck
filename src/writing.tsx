@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react';
-import sticky from './src/sticky.png';
 
 
 export const Writing: React.FC = () => {
@@ -37,7 +36,6 @@ export const Writing: React.FC = () => {
                 <div className="Deck-box">
                     <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
                     <div className="Box-face" id="front">
-                        <img src ={sticky} alt="Sticky"/>
                         <div className="text-container">Shawn Wrote Something</div>
                         </div>
                     <div className="Box-face" id="back">Back</div>
