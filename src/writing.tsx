@@ -29,23 +29,23 @@ export const Writing: React.FC = () => {
 
     return (
         <>
-        <div className="relative">
-            <div className="Overlay" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
-            <div className="Glow" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
-            <div className="Deck-box">
-                <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-                    <div className="Box-face" id="front">Shawn Wrote Something</div>
-                    <div className="Box-face" id="back">Back</div>
-                    <div className="Box-face" id="left">Left</div>
-                    <div className="Box-face" id="right">Right</div>
-                    <div className="Box-face" id="top">Top</div>
-                    <div className="Box-face" id="bottom">bottom</div>
+            <div className="relative">
+                <div className="Overlay" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
+                <div className="Glow" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
+                <div className="Deck-box">
+                    <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+                        <div className="Box-face" id="front">Shawn Wrote Something</div>
+                        <div className="Box-face" id="back">Back</div>
+                        <div className="Box-face" id="left">Left</div>
+                        <div className="Box-face" id="right">Right</div>
+                        <div className="Box-face" id="top">Top</div>
+                        <div className="Box-face" id="bottom">bottom</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div className='speech-bubble'>
-            <p>Stuff that Shawn Wrote</p>
-        </div>
+            <div className={`speech-bubble ${isHovered ? 'show' : ''}`}>
+                <p>Stuff that Shawn Wrote</p>
+            </div>
         </>
     );
 };
