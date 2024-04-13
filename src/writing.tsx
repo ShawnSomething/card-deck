@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 export const Writing: React.FC = () => {
     const boxRef = useRef<HTMLDivElement>(null);
     const [isHovered, setIsHovered] = useState(false);
+    const [isClicked, setIsClicked] = useState(false);
 
     const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
         const box = boxRef.current;
@@ -28,21 +29,28 @@ export const Writing: React.FC = () => {
         setIsHovered(false);
     };
 
+    const handleOnClick = () => {
+        setIsClicked(prevState => !prevState);
+    };
+
     return (
         <>
             <div className="relative">
                 <div className="Overlay" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
                 <div className="Glow" style={{ visibility: isHovered ? 'visible' : 'hidden' }} />
                 <div className="Deck-box">
-                    <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-                    <div className="Box-face" id="front" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>
-                        <div className="text-container">Shawn Wrote Something</div>
+                    <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} onClick={handleOnClick}>
+                        <div className="Box-face" id="front" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>
+                            <div className="text-container">Shawn Wrote Something</div>
                         </div>
-                    <div className="Box-face" id="back" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>Back</div>
-                    <div className="Box-face" id="left" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
-                    <div className="Box-face" id="right" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
-                    <div className="Box-face" id="top" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>-------------------</div>
-                    <div className="Box-face" id="bottom" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
+                        <div className="Box-face" id="back" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>Back</div>
+                        <div className="Box-face" id="left" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
+                        <div className="Box-face" id="right" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
+                        <div className="Box-face" id="top" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}>
+                            <div className={`spark ${isClicked ? 'show' : ''}`} />
+                            -------------------
+                        </div>
+                        <div className="Box-face" id="bottom" style={{backgroundImage: 'linear-gradient(to bottom right, black, grey)'}}></div>
                     </div>
                 </div>
             </div>

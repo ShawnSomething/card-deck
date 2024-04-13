@@ -17,7 +17,7 @@
 
 .Nav-bar .home {
   margin-right: auto;
-  margin: 1vh 1vw;
+  margin: 2vh 1vw;
 }
 
 .Nav-bar ul {
@@ -293,4 +293,33 @@
 
 .speech-bubble.show {
   opacity: 1;
+}
+
+.spark {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px; 
+  height: 10px; 
+  background-color: rgb(255, 255, 1);
+  border-radius: 50%;
+  opacity: 0;
+  animation: sparkAnimation 0.5s ease forwards;
+  z-index: 8;
+}
+
+@keyframes sparkAnimation {
+  0% {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+  }
+  100% {
+      opacity: 0;
+      transform: translateX(-50%) scale(3);
+  }
+}
+
+.spark.show {
+  display: block;
 }
