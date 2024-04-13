@@ -36,10 +36,10 @@ export const Animating: React.FC = () => {
                     <div className="Box" ref={boxRef} onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
                         <div className="Box-face" id="front">Shawn Animated Something</div>
                         <div className="Box-face" id="back">Back</div>
-                        <div className="Box-face" id="left">Left</div>
-                        <div className="Box-face" id="right">Right</div>
-                        <div className="Box-face" id="top">Top</div>
-                        <div className="Box-face" id="bottom">bottom</div>
+                        <div className="Box-face" id="left"></div>
+                        <div className="Box-face" id="right"></div>
+                        <div className="Box-face" id="top"></div>
+                        <div className="Box-face" id="bottom"></div>
                     </div>
                 </div>
             </div>
