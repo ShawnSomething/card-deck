@@ -107,7 +107,8 @@
   position: relative;
   bottom: 0;
   left: 0;
-  transform: translateY(10%);
+  transform: translateY(250%);
+  z-index: 6;
 }
 
 #back {
