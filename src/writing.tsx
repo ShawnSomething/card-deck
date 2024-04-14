@@ -38,12 +38,13 @@ export const Writing: React.FC = () => {
     setTimeout(() => setIsSparkActive(false), 500);
 
     setIsSliceActive(true);
-    setTimeout(() => setIsSliceActive(false), 1000);
+    setTimeout(() => setIsSliceActive(false), 800);
 
-    setIsParticleActive(true);
-    setTimeout(() => setIsParticleActive(false), 1200);
+    setTimeout(() => {
+      setIsParticleActive(false);
+      renderWritingCards();
+    }, 1000);
 
-    renderWritingCards()
   };
 
   const renderWritingCards = () => {

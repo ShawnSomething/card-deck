@@ -6,12 +6,11 @@ import { Coding } from './coding';
 import { Animating } from './animating';
 import { About } from './about';
 import { NavBar } from './nav';
-import { WritingCards } from './writing_cards';
 
 function App() {
   return (
       <>
-        <main className="App-main">
+        <main className="App-home">
           <header>
             <NavBar></NavBar>
           </header>
@@ -25,9 +24,7 @@ function App() {
               <li><Animating></Animating></li>
             </ul>
           </body>
-          <footer>
-            <About></About> 
-          </footer>
+          <body><About></About></body>
         </main>
       </>
 

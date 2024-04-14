@@ -45,7 +45,6 @@ export const WritingCards: React.FC = () => {
             <SingleCard key={index} project={project}/>
           ))}
         </body>
-        <footer style={{color:'white'}}>shawnsomething</footer>
       </main>
     </>
   );

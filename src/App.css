@@ -1,7 +1,15 @@
 .App-main {
   background: linear-gradient(to bottom right, #5cb18f, #0b3119);
-  margin: 5;
-  padding: 5;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-home {
+  background: linear-gradient(to bottom right, #5cb18f, #0b3119);
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
 }
@@ -325,7 +333,7 @@
   width: 100%;
   height: 50%;
   background-image: linear-gradient(to right, transparent, #ff0000, transparent);
-  animation: spark 0.3s ease-in-out forwards;
+  animation: spark 0.2s ease-in-out forwards;
 }
 
 @keyframes particle {
@@ -342,7 +350,7 @@
   width: 100%;
   height: 50%;
   background-image: linear-gradient(to right, transparent, #ffffff);
-  animation: spark 0.5s ease-in-out forwards;
+  animation: spark 0.2s ease-in-out forwards;
 }
 
 #slice {
