@@ -402,8 +402,8 @@
 .single-card {
   display: absolute;
   justify-content: center;
+  height: 500px;
   margin: 5vh;
-  text-align: center;
 }
 
 .single-card ul {
@@ -428,7 +428,7 @@
   height: 250px;
   width: 250px;
   position: relative;
-  margin: 5vh auto;
+  margin: auto;
   transform-style: preserve-3d;
   animation: animate;
   z-index: 5;
@@ -444,7 +444,7 @@
 }
 
 #front {
-  height: 300px;
+  height: 350px;
   width: 250px;
   text-align: center;
   padding: 20px 0px;
@@ -454,31 +454,46 @@
 }
 
 #project-name {
+  top: 0;
   text-align: left;
+  border: 0;
+  font-size: 20px;
+  padding: 10px;
 }
 
 #project-thumbnail {
-  width: auto;
-  height: auto;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  border: 2px solid #ccc;
-  border-bottom: .5px solid #ccc;
+  top: 6vh;
+  width: 95%;
+  height: 50%;
+  border-radius: 10px;
+  border: 1px solid #ffffff;
   display: flex;
   justify-content: center;
-  border-color: black;
+  left: 2%;
+  border-color: rgb(255, 255, 255);
+  padding: 10px;
 }
 
 #project-link {
+  top: 30vh;
   text-align: center;
+  border: 0;
+  padding: 10px;
+  font-size: 17px;
 }
 
 #project-desc {
+  top: 32vh;
   text-align: left;
+  border: 0;
+  padding: 10px;
+  font-size: 17px;
 }
 
 #project-date {
-  text-align: right;
+  top: 42vh;
+  left: 85%;
+  border: 0;
+  padding: 10px;
+  font-size: 10px;
 }
