@@ -7,6 +7,7 @@ export const WritingCards: React.FC = () => {
   const projectData = [
     {
       projectName: "3 Lessons from Building a Chrome Extension with TypeScript",
+      projectThumbnail: "obsidianNotes.jpg",
       projectLink: "https://shawnsomething.substack.com/p/3-lessons-from-building-a-chrome",
       projectDescription: "The lessons learned from someone who has never made a Chrome Extension and never used TypeScript",
       projectDate: "21-01-2024"
