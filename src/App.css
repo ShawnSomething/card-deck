@@ -462,10 +462,10 @@
 
 #project-link {
   top: 28vh;
-  left:35%;
+  left:32%;
   text-align: center;
   border: 0;
-  padding: 12px;
+  padding: 22px;
   font-size: 10px;
   color: whitesmoke;
 }
@@ -474,12 +474,12 @@
   top: 32vh;
   text-align: left;
   border: 0;
-  padding: 10px;
+  padding: 12px;
   font-size: 15px;
 }
 
 #project-date {
-  top: 42vh;
+  top: 45vh;
   left: 70%;
   border: 0;
   padding: 10px;
@@ -514,10 +514,10 @@
 }
 
 .fade-in {
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  scale: 1;
+  transition: scale 0.2s ease-in-out;
 }
 
 .fade-in.visible {
-  opacity: 1 ;
+  scale: 0 ;
 }

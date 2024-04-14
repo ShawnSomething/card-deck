@@ -43,10 +43,6 @@ const SingleCard: React.FC<SingleCardProps> = ({ project }) => {
   return (
     <div className="relative">
       <div
-        className="Overlay"
-        style={{ visibility: isHovered ? "visible" : "hidden" }}
-      />
-      <div
         className="card"
         ref={cardRef}
         onMouseMove={handleMouseMove}
