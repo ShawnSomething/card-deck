@@ -303,10 +303,53 @@
 
 .spark-animation {
   position: absolute;
-  top: 10;
+  top: 0;
   left: 0;
-  width: 70%;
-  height: 60%;
+  width: 90%;
+  height: 80%;
   background-image: linear-gradient(to right, #ffbb00, transparent);
-  animation: spark 0.5s ease-in-out;
+  animation: spark 0.2s ease-in-out forwards;
+}
+
+@keyframes slice {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+.slice-animation {
+  position: absolute;
+  top: 0vh;
+  bottom: -10vh;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to right, transparent, #ff0000, transparent);
+  animation: spark 0.3s ease-in-out forwards;
+}
+
+@keyframes particle {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+.particle-animation {
+  position: absolute;
+  top: 0vh;
+  bottom: -10vh;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-image: linear-gradient(to right, transparent, #ffffff);
+  animation: spark 0.5s ease-in-out forwards;
+}
+
+#slice {
+  top: -5vh;
+  bottom: -10vh;
+  width: 98%;
+  height: 50%;
+  transform: translateZ(-10px);
+  border-width: 0;
 }
