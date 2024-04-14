@@ -33,13 +33,13 @@ export const Animating: React.FC = () => {
 
   const handleBoxClick = () => {
     setIsSparkActive(true);
-    setTimeout(() => setIsSparkActive(false), 1000);
+    setTimeout(() => setIsSparkActive(false), 500);
 
     setIsSliceActive(true);
-    setTimeout(() => setIsSliceActive(false), 1500);
+    setTimeout(() => setIsSliceActive(false), 1000);
 
     setIsParticleActive(true);
-    setTimeout(() => setIsParticleActive(false), 1800);
+    setTimeout(() => setIsParticleActive(false), 1200);
   };
 
   return (

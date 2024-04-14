@@ -6,6 +6,7 @@ import { Coding } from './coding';
 import { Animating } from './animating';
 import { About } from './about';
 import { NavBar } from './nav';
+import { WritingCards } from './writing_cards';
 
 function App() {
   return (

@@ -1,5 +1,7 @@
 import React, { useRef, useState } from "react";
-
+import { WritingCards } from "./writing_cards";
+import ReactDOM from "react-dom";
+ 
 export const Writing: React.FC = () => {
   const boxRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -33,14 +35,25 @@ export const Writing: React.FC = () => {
 
   const handleBoxClick = () => {
     setIsSparkActive(true);
-    setTimeout(() => setIsSparkActive(false), 1000);
+    setTimeout(() => setIsSparkActive(false), 500);
 
     setIsSliceActive(true);
-    setTimeout(() => setIsSliceActive(false), 1500);
+    setTimeout(() => setIsSliceActive(false), 1000);
 
     setIsParticleActive(true);
-    setTimeout(() => setIsParticleActive(false), 1800);
+    setTimeout(() => setIsParticleActive(false), 1200);
+
+    renderWritingCards()
   };
+
+  const renderWritingCards = () => {
+    ReactDOM.render(
+        <React.StrictMode>
+            <WritingCards />
+        </React.StrictMode>,
+        document.getElementById('root')
+    )
+  }
 
   return (
     <>
