@@ -51,31 +51,23 @@ export const WritingCards: React.FC = () => {
             }
             50% {
               transform: scale(1.2);
+              transform: translateX(0px)
               opacity: 0.5;
+            }
+            75% {
+              transform: scale(1);
+              transform: translateY(15px)
+              opacity: 1;
             }
             100% {
               transform: scale(1);
+              transform: translateX(0px)
               opacity: 1;
             }
           }
           
-          @keyframes shake {
-            0%, 100% {
-              transform: translateX(0);
-            }
-            25% {
-              transform: translateX(-5px);
-            }
-            50% {
-              transform: translateX(5px);
-            }
-            75% {
-              transform: translateX(-5px);
-            }
-          }
-          
           .fade-in {
-            animation: fadeIn 0.4s ease-in forwards; shake 0.2s ease-in 0.4s forwards;
+            animation: fadeIn 0.5s ease-in forwards;
           }
         `}
       </style>
