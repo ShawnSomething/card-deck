@@ -41,7 +41,6 @@ export const WritingCards = () => {
             <li><SingleCard></SingleCard></li>
           </ul>
         </body>
-        <footer></footer>
       </main>
     </>
   );
