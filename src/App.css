@@ -443,8 +443,8 @@
   top: 0;
   text-align: left;
   border: 0;
-  font-size: 20px;
-  padding: 10px;
+  font-size: 12px;
+  padding: 8px;
 }
 
 #project-thumbnail {
@@ -462,11 +462,12 @@
 
 #project-link {
   top: 28vh;
-  left: 40%;
+  left:35%;
   text-align: center;
   border: 0;
-  padding: 10px;
-  font-size: 15px;
+  padding: 12px;
+  font-size: 10px;
+  color: whitesmoke;
 }
 
 #project-desc {
@@ -474,7 +475,7 @@
   text-align: left;
   border: 0;
   padding: 10px;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #project-date {
@@ -510,4 +511,13 @@
   animation: glow-animation 1s infinite alternate;
   margin: 0;
   padding: 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1 ;
 }

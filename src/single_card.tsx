@@ -62,7 +62,7 @@ const SingleCard: React.FC<SingleCardProps> = ({ project }) => {
           />
           <div className="card-face" id="project-name">{project.projectName}</div>
           <div className="card-face" id="project-thumbnail">{project.projectThumbnail}</div>
-          <div className="card-face" id="project-link">{project.projectLink}</div>
+          <div className="card-face" id="project-link"><a href={project.projectLink} target="_blank" rel="noopener noreferrer">Full Article</a></div>
           <div className="card-face" id="project-desc">{project.projectDescription}</div>
           <div className="card-face" id="project-date">{project.projectDate}</div>
         </div>
