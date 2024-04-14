@@ -1,8 +1,13 @@
 import React from "react";
 import { NavBar } from "./nav";
-import { SingleCard } from "./single_card";
+import SingleCard from "./single_card";
 
-export const WritingCards = () => {
+export const WritingCards: React.FC = () => {
+  const projectData = [
+    { projectName: "hello", projectLink: "weep", projectDescription: "stop honking", projectDate: "14-04-2024" },
+    { projectName: "donuts" },
+  ];
+
   return (
     <>
       <main
@@ -28,19 +33,19 @@ export const WritingCards = () => {
             Checkout Shawn's Substack
           </a>
           <style>
-        {`
+            {`
           .page-outlink a:hover {
             font-weight: bold;
           }
         `}
-      </style>
+          </style>
         </body>
         <body className="single-card">
-          <ul>
-            <li><SingleCard></SingleCard></li>
-            <li><SingleCard></SingleCard></li>
-          </ul>
+          {projectData.map((project, index) => (
+            <SingleCard key={index} project={project}/>
+          ))}
         </body>
+        <footer style={{color:'white'}}>shawnsomething</footer>
       </main>
     </>
   );

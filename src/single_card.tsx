@@ -1,6 +1,18 @@
 import React, { useRef, useState } from "react";
 
-export const SingleCard: React.FC = () => {
+interface Project {
+    projectName?: string;
+    projectThumbnail?: any;
+    projectLink?: string;
+    projectDescription?: string;
+    projectDate?: string;
+}
+
+interface SingleCardProps {
+    project: Project;
+}
+
+const SingleCard: React.FC<SingleCardProps> = ({ project }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -29,39 +41,34 @@ export const SingleCard: React.FC = () => {
   };
 
   return (
-    <>
-      <div className="relative">
-        <div
-          className="Overlay"
-          style={{ visibility: isHovered ? "visible" : "hidden" }}
-        />
-        <div
-          className="card"
-          ref={cardRef}
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="card-face" id="c-front">
+    <div className="relative">
+      <div
+        className="Overlay"
+        style={{ visibility: isHovered ? "visible" : "hidden" }}
+      />
+      <div
+        className="card"
+        ref={cardRef}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className="card-face" id="c-front" style={{
+                backgroundImage:
+                  "linear-gradient(to bottom, #134E5E, #71B280)",
+              }}>
           <div
             className="card-glow"
             style={{ visibility: isHovered ? "visible" : "hidden" }}
           />
-            <div className="card-face" id="project-name">
-              hi
-            </div>
-            <div className="card-face" id="project-thumbnail"></div>
-            <div className="card-face" id="project-link">
-              heya
-            </div>
-            <div className="card-face" id="project-desc">
-              you
-            </div>
-            <div className="card-face" id="project-date">
-              cunt
-            </div>
-          </div>
+          <div className="card-face" id="project-name">{project.projectName}</div>
+          <div className="card-face" id="project-thumbnail">{project.projectThumbnail}</div>
+          <div className="card-face" id="project-link">{project.projectLink}</div>
+          <div className="card-face" id="project-desc">{project.projectDescription}</div>
+          <div className="card-face" id="project-date">{project.projectDate}</div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
+
+export default SingleCard;
