@@ -1,4 +1,6 @@
 import React, { useRef, useState } from "react";
+import { AnimatingCards } from "./animating_cards";
+import ReactDOM from "react-dom";
 
 export const Animating: React.FC = () => {
   const boxRef = useRef<HTMLDivElement>(null);
@@ -36,10 +38,21 @@ export const Animating: React.FC = () => {
     setTimeout(() => setIsSparkActive(false), 500);
 
     setIsSliceActive(true);
-    setTimeout(() => setIsSliceActive(false), 1000);
+    setTimeout(() => setIsSliceActive(false), 800);
 
-    setIsParticleActive(true);
-    setTimeout(() => setIsParticleActive(false), 1200);
+    setTimeout(() => {
+      setIsParticleActive(false);
+      renderWritingCards();
+    }, 1000);
+  };
+
+  const renderWritingCards = () => {
+    ReactDOM.render(
+      <React.StrictMode>
+        <AnimatingCards />
+      </React.StrictMode>,
+      document.getElementById("root")
+    );
   };
 
   return (
