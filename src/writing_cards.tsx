@@ -1,11 +1,14 @@
 import React from "react";
 import { NavBar } from "./nav";
 import SingleCard from "./single_card";
+import obsidianNotes from './obsidianNotes.jpg';
+import matter from './matter.jpg';
 
 export const WritingCards: React.FC = () => {
   const projectData = [
     {
       projectName: "What You Do Doesn't Actually Matter",
+      projectThumbnail: matter,
       projectLink:
         "https://shawnsomething.substack.com/p/what-you-do-doesnt-actually-matter",
       projectDescription:
@@ -14,7 +17,7 @@ export const WritingCards: React.FC = () => {
     },
     {
       projectName: "3 Lessons from Building a Chrome Extension with TypeScript",
-      projectThumbnail: 'obsidianNotes.jpg',
+      projectThumbnail: obsidianNotes,
       projectLink:
         "https://shawnsomething.substack.com/p/3-lessons-from-building-a-chrome",
       projectDescription:
