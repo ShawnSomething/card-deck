@@ -5,22 +5,76 @@ import SingleCard from "./single_card";
 export const AnimatingCards: React.FC = () => {
   const projectData = [
     {
-      projectName: "What You Do Doesn't Actually Matter",
-      projectThumbnail: "./matter.jpg",
+      projectName: "Jigsaw from Saw Forgot to Prepare...",
+      projectThumbnail: "./Jigsaw.jpg",
       projectLink:
-        "https://shawnsomething.substack.com/p/what-you-do-doesnt-actually-matter",
+        "https://www.youtube.com/watch?v=zbrm2pXMsQE",
       projectDescription:
-        "The dichotomy between our actions and our intentions",
-      projectDate: "26-02-2024",
+        "...and has to just Wing it",
+      projectDate: "17-02-2024",
     },
     {
-      projectName: "3 Lessons from Building a Chrome Extension with TypeScript",
-      projectThumbnail: "./obsidianNotes.jpg",
+      projectName: "Pit Stop",
+      projectThumbnail: "./pitstop.jpg",
       projectLink:
-        "https://shawnsomething.substack.com/p/3-lessons-from-building-a-chrome",
+        "https://www.youtube.com/watch?v=z0151bVmMJ8",
       projectDescription:
-        "The lessons learned from someone who has never made a Chrome Extension and never used TypeScript",
-      projectDate: "21-01-2024",
+        "Yes, I'm a Mess - AJR animation",
+      projectDate: "29-09-2023",
+    },
+    {
+      projectName: "Self Taught Animation Progress",
+      projectThumbnail: "./animate2021.jpg",
+      projectLink:
+        "https://www.youtube.com/watch?v=znLLHYjyJQo",
+      projectDescription:
+        "2021 to 2022 animation projects",
+      projectDate: "26-12-2022",
+    },
+    {
+      projectName: "The Tooth Fairy Messes Up The Whole Routine",
+      projectThumbnail: "./toothfairy.jpg",
+      projectLink:
+        "https://www.youtube.com/watch?v=WQshxRsiK0Yo",
+      projectDescription:
+        "Game Changer Animation",
+      projectDate: "6-8-2022",
+    },
+    {
+      projectName: "Shotgun",
+      projectThumbnail: "./shotgun.jpg",
+      projectLink:
+        "https://www.youtube.com/watch?v=Nr8ZoIVZAbk",
+      projectDescription:
+        "George Ezra Animation",
+      projectDate: "27-8-2021",
+    },
+    {
+      projectName: "War on Birds",
+      projectThumbnail: "./birdWar.jpg",
+      projectLink:
+        "https://www.youtube.com/watch?v=TMj-ElGAiXQ",
+      projectDescription:
+        "Mbmbam Animation",
+      projectDate: "24-12-2020",
+    },
+    {
+      projectName: "Chill Jam Session",
+      projectThumbnail: "./jamSession.jpg",
+      projectLink:
+        "https://www.youtube.com/watch?v=BVdqYqzMwvk",
+      projectDescription:
+        "Chill Jam Music",
+      projectDate: "4-10-2020",
+    },
+    {
+      projectName: "Teaching myself how to animate",
+      projectThumbnail: "./animate2017",
+      projectLink:
+        "https://www.youtube.com/watch?v=BVdqYqzMwvk",
+      projectDescription:
+        "2017 to 2020 animation journey",
+      projectDate: "5-9-2020",
     },
   ];
 
