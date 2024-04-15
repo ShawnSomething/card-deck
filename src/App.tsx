@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import { Hero } from './hero';
 import { Writing } from './writing';
