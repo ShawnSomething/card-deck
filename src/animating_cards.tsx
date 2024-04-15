@@ -69,7 +69,7 @@ export const AnimatingCards: React.FC = () => {
     },
     {
       projectName: "Teaching myself how to animate",
-      projectThumbnail: "./animate2017",
+      projectThumbnail: "./animate2017.jpg",
       projectLink:
         "https://www.youtube.com/watch?v=BVdqYqzMwvk",
       projectDescription:
