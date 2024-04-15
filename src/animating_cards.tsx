@@ -136,17 +136,17 @@ export const AnimatingCards: React.FC = () => {
         </header>
         <div>
           <body className="page-summary">
-            Stuff that Shawn Wrote. From learnings to musings, a lot goes
-            through his mind at any given time. Some make it into words, few
-            make it online, many lost. Hope you enjoy these articles and keen to
-            have a discussion on them.
+          Stuff that Shawn Animated. The best medium for art and storytelling.
+          The ability to turn a blank page into a moving, living, breathing
+          piece. Have a watch, have a chuckle, experience the fever-dreams that
+          become reality.
           </body>
           <body className="page-outlink">
             <a
-              href="https://shawnsomething.substack.com/"
+              href="https://www.youtube.com/shawnsomething"
               style={{ color: "white" }}
             >
-              Checkout Shawn's Substack
+              Checkout Shawn's YouTube Channel
             </a>
           </body>
         </div>

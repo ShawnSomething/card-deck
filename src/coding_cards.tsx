@@ -5,22 +5,58 @@ import SingleCard from "./single_card";
 export const CodingCards: React.FC = () => {
   const projectData = [
     {
-      projectName: "What You Do Doesn't Actually Matter",
-      projectThumbnail: "./matter.jpg",
+      projectName: "SpinBot",
+      projectThumbnail: "./spinbot.jpg",
       projectLink:
-        "https://shawnsomething.substack.com/p/what-you-do-doesnt-actually-matter",
+        "https://spinbot.netlify.app/",
       projectDescription:
-        "The dichotomy between our actions and our intentions",
-      projectDate: "26-02-2024",
+        "A robot that spins",
+      projectDate: "1-04-2024",
     },
     {
-      projectName: "3 Lessons from Building a Chrome Extension with TypeScript",
+      projectName: "Obsidian Capture Tool",
       projectThumbnail: "./obsidianNotes.jpg",
       projectLink:
-        "https://shawnsomething.substack.com/p/3-lessons-from-building-a-chrome",
+        "https://chromewebstore.google.com/detail/obsidiancapturetool/lhcnkgmhdnhgdicaghbnnikjpddfmkni",
       projectDescription:
-        "The lessons learned from someone who has never made a Chrome Extension and never used TypeScript",
-      projectDate: "21-01-2024",
+        "A Chrome Extension that allows you to take notes and save it to Obsidian",
+      projectDate: "31-01-2024",
+    },
+    {
+      projectName: "SpaceBreaker",
+      projectThumbnail: "./spacebreaker.jpg",
+      projectLink:
+        "https://spacebreaker.netlify.app/",
+      projectDescription:
+        "A hybrid between Space Invader and Ball Breaker",
+      projectDate: "30-08-2023",
+    },
+    {
+      projectName: "Sad Calculator",
+      projectThumbnail: "./sadcalc.jpg",
+      projectLink:
+        "https://sedcalc.netlify.app/",
+      projectDescription:
+        "A calculator with self confidence issues",
+      projectDate: "16-10-2022",
+    },
+    {
+      projectName: "SpaceBoi Jump",
+      projectThumbnail: "./spaceboi.jpg",
+      projectLink:
+        "https://spaceboijump.netlify.app/",
+      projectDescription:
+        "A Chrome running Dino clone, but in space",
+      projectDate: "31-07-2022",
+    },
+    {
+      projectName: "Chicken Heist",
+      projectThumbnail: "./chicken.jpg",
+      projectLink:
+        "https://chickenheist.netlify.app/",
+      projectDescription:
+        "A text-based choose your own adventure game",
+      projectDate: "27-06-2022",
     },
   ];
 
@@ -82,17 +118,16 @@ export const CodingCards: React.FC = () => {
         </header>
         <div>
           <body className="page-summary">
-            Stuff that Shawn Wrote. From learnings to musings, a lot goes
-            through his mind at any given time. Some make it into words, few
-            make it online, many lost. Hope you enjoy these articles and keen to
-            have a discussion on them.
+          Stuff that Shawn Codeded. He is still new to this, but is finding it
+          incredibly rewarding. From Calculators with Self Condifence Issues to
+          Spinning Robots, the perverbial hamster wheel of fun apps are turning.
           </body>
           <body className="page-outlink">
             <a
-              href="https://shawnsomething.substack.com/"
+              href="https://github.com/ShawnSomething"
               style={{ color: "white" }}
             >
-              Checkout Shawn's Substack
+              Checkout Shawn's GitHub
             </a>
           </body>
         </div>
