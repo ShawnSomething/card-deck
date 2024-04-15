@@ -22,6 +22,42 @@ export const WritingCards: React.FC = () => {
         "The lessons learned from someone who has never made a Chrome Extension and never used TypeScript",
       projectDate: "21-01-2024",
     },
+    {
+      projectName: "Self Publishing Lessons",
+      projectThumbnail: "./kindle.jpg",
+      projectLink:
+        "https://khooweishawn.medium.com/what-self-publishing-my-first-book-on-amazon-kdp-has-thought-me-5dc9f05519d4",
+      projectDescription:
+        "What self publishing my first book on Amazon KDP has taught me",
+      projectDate: "17-04-2022",
+    },
+    {
+      projectName: "A Letter to My Future Self",
+      projectThumbnail: "./self.jpg",
+      projectLink:
+        "https://khooweishawn.medium.com/a-letter-to-my-future-self-ff15bb5e39ac",
+      projectDescription:
+        "Are you happy yet?",
+      projectDate: "12-12-2020",
+    },
+    {
+      projectName: "Love, Paulo",
+      projectThumbnail: "./paulo.jpg",
+      projectLink:
+        "https://esperantomagazine.com/2019/10/21/love-paulo/",
+      projectDescription:
+        "Postcards, in essence, are vehicles for stories. They tell stories of where you’ve been, what you’ve done and who you cared about",
+      projectDate: "21-10-2019",
+    },
+    {
+      projectName: "Portrayal of Society in Cartoons",
+      projectThumbnail: "./cartoon.jpg",
+      projectLink:
+        "https://khooweishawn.medium.com/how-the-portrayal-of-society-in-cartoons-script-the-thoughts-of-youths-a-case-study-of-the-90666aaf34ee",
+      projectDescription:
+        "How the portrayal of society in cartoons script the thoughts of youths: A case study Disney’s DuckTales",
+      projectDate: "3-09-2018",
+    },
   ];
 
   return (

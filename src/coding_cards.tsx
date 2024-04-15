@@ -110,7 +110,7 @@ export const CodingCards: React.FC = () => {
       <main
         className={`App-main`}
         style={{
-          backgroundImage: "linear-gradient(to bottom right, black, grey)",
+          backgroundImage: "linear-gradient(to bottom right, #09203F, #537895)",
         }}
       >
         <header>

@@ -128,7 +128,7 @@ export const AnimatingCards: React.FC = () => {
       <main
         className={`App-main`}
         style={{
-          backgroundImage: "linear-gradient(to bottom right, black, grey)",
+          backgroundImage: "linear-gradient(to bottom right, #614385, #516395)",
         }}
       >
         <header>
