@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 
 interface Project {
     projectName?: string;
-    projectThumbnail?: any;
+    projectThumbnail?: string;
     projectLink?: string;
     projectDescription?: string;
     projectDate?: string;

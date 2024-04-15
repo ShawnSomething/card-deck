@@ -276,7 +276,8 @@
   position: relative;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
-  left: -1%;
+  top: 3vh;
+  left: 0%;
   border-radius: 20px;
   justify-content: space-around;
   width: auto;
