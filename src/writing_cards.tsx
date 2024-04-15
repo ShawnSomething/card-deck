@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { NavBar } from "./nav";
 import SingleCard from "./single_card";
 
 export const WritingCards: React.FC = () => {
-  const [cardsLoaded, setCardsLoaded] = useState<boolean>(false);
   const projectData = [
     {
       projectName: "What You Do Doesn't Actually Matter",
@@ -15,7 +14,7 @@ export const WritingCards: React.FC = () => {
     },
     {
       projectName: "3 Lessons from Building a Chrome Extension with TypeScript",
-      projectThumbnail: "obsidianNotes.jpg",
+      projectThumbnail: 'obsidianNotes.jpg',
       projectLink:
         "https://shawnsomething.substack.com/p/3-lessons-from-building-a-chrome",
       projectDescription:
