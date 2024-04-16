@@ -41,7 +41,6 @@
     ]
   },
   "devDependencies": {
-    "@types/react": "^18.2.78",
-    "webpack": "^5.91.0"
+    "@types/react": "^18.2.78"
   }
 }
